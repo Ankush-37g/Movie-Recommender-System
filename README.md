@@ -95,48 +95,7 @@ Search for "Avatar" → Gets recommendations like "Inception", "Avatar 2", "Avat
 - **Search** for any movie by title
 - **Show all** to see the complete database
 
-## 🌐 Deployment
 
-### Option 1: Streamlit Cloud (Recommended ⭐)
-
-**Best for**: Quick & free hosting with automatic updates
-
-1. **Push to GitHub**
-```bash
-git add .
-git commit -m "Initial commit: Movie Recommender"
-git push -u origin main
-```
-
-2. **Deploy on Streamlit Cloud**
-   - Go to https://streamlit.io/cloud
-   - Click "New app"
-   - Select repository, branch (`main`), and file (`app.py`)
-   - Click "Deploy"
-
-3. **Share your link!**
-   - Your app is now live: `https://your-username-movie-recommender.streamlit.app`
-
-### Option 2: Heroku
-
-**Best for**: More control & custom domain
-
-```bash
-# Create Heroku app
-heroku create your-app-name
-
-# Deploy
-git push heroku main
-
-# View logs
-heroku logs --tail
-```
-
-Your app will be at: `https://your-app-name.herokuapp.com`
-
-### Option 3: Railway / Render
-
-Similar process - connect GitHub repo and auto-deploy!
 
 ## 📊 Model Details
 
@@ -149,15 +108,6 @@ Similar process - connect GitHub repo and auto-deploy!
 | **Dataset Size** | 5,000 movies |
 | **Training Time** | ~30 seconds on first load |
 
-## 🎯 Future Enhancements
-
-- [ ] Add real movie posters from TMDB API
-- [ ] Implement collaborative filtering
-- [ ] User ratings and reviews system
-- [ ] Multiple recommendation algorithms (Hybrid approach)
-- [ ] Movie trailers integration
-- [ ] Genre-based filtering
-- [ ] User authentication & personalization
 
 ## 📝 Tech Stack
 
@@ -167,24 +117,8 @@ Similar process - connect GitHub repo and auto-deploy!
 - **NLP**: NLTK
 - **Data**: TMDB 5000 Movies dataset
 
-## 🐛 Troubleshooting
 
-| Issue | Solution |
-|-------|----------|
-| App takes long to load | Normal on first run. Model trains in ~30s. Subsequent loads are instant. |
-| "NLTK data missing" error | Run: `python -c "import nltk; nltk.download('punkt')"` |
-| "CSV files not found" | Ensure `tmdb_5000_*.csv` files are in same directory as `app.py` |
-| Port 8501 already in use | Run: `streamlit run app.py --server.port 8502` |
 
-## 📞 Support
-
-- Found a bug? Open an issue on GitHub
-- Have suggestions? Create a discussion
-- Want to contribute? Submit a pull request!
-
-## ⚖️ License
-
-MIT License - Feel free to use this project however you like!
 
 ## 📚 Data Source
 
@@ -198,8 +132,5 @@ Dataset from [TMDB 5000 Movies](https://www.kaggle.com/tmdb/tmdb-movie-metadata)
 
 ---
 
-**Made with ❤️ by a Movie Enthusiast**
 
-⭐ If you like this project, please star it on GitHub!
 
-🚀 **[Deploy your own now!](https://streamlit.io/cloud)**
